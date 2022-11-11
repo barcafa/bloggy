@@ -1,16 +1,13 @@
-import Head from "next/head";
+import { Fragment } from "react";
+
+import FeaturedPosts from "../components/home-page/featured-posts";
+import Hero from "../components/home-page/hero";
 
 export default function HomePage() {
   return (
-    <div>
-      <Head>
-        <title>Bloggy</title>
-
-      </Head>
-      <main>
-        <h1>Hello</h1>
-
-      </main>
-    </div>
+    <Fragment>
+      <Hero />
+      <FeaturedPosts />
+    </Fragment>
   )
 }
